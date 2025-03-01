@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 .navbar {
     background: #fdfaf2;
     padding: 10px;
@@ -10,7 +11,7 @@
     .logo {
       font-size: 36px;
       font-weight: 700;
-      font-family: "Pacifico", cursive;
+    font-family: "Pacifico", cursive !important;
       background: linear-gradient(to right, orange, red);
       -webkit-background-clip: text;
       color: transparent;
@@ -19,13 +20,6 @@
      
     }
   
-    .title {
-      font-size: 28px;
-      font-weight: bold;
-      color: #e66a4e;
-      font-family: "Pacifico", cursive;
-      margin-bottom: 10px;
-    }
   
     .categories {
       display: flex;
@@ -42,6 +36,7 @@
         font-size: 16px;
         cursor: pointer;
         transition: all 0.3s ease;
+        color: #4c4c4c;
   
         &:hover {
           background: #e6930f;
