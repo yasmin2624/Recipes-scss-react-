@@ -1,0 +1,61 @@
+@import '../../styles/variables';
+
+.footer {
+  width: 100%; 
+  
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid $border-color;
+  background: white;
+  // position: fixed;
+  // bottom: 0;
+  // left: 0;
+  z-index: 10; 
+
+  .footerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 72rem;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+    border-bottom: 2px solid $border-color;
+    padding-bottom: 1rem;
+  }
+
+  .logoSection {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-right: 0.5rem;
+    }
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+
+  .link {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $primary-color;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    
+  }
+
+  .copyRight {
+    color: $text-color;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+
+    .author {
+      font-weight: 600;
+    }
+  }
+}

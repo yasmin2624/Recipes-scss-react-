@@ -1,0 +1,37 @@
+@import '../../styles/variables';
+
+.main {
+  display: flex;
+}
+
+.sidebar {
+  width: $sidebar-width;
+  height: 100vh;
+  padding: 1rem;
+  border-right: 1px solid #ddd;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed; 
+  left: 0;
+  top: 0;
+}
+
+.content {
+  background-color: #F4F2EE;
+  width: calc(100% - #{$sidebar-width}); 
+  margin-left: $sidebar-width; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid #ddd;
+  background: white;
+  width: 100%;
+  margin-top: auto;
+}

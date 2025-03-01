@@ -1,0 +1,58 @@
+.navbar {
+    background: #fdfaf2;
+    padding: 10px;
+    padding-bottom: 15px;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    border-bottom: 3px solid #4c4c4b2a; 
+
+
+    .logo {
+      font-size: 36px;
+      font-weight: 700;
+      font-family: "Pacifico", cursive;
+      background: linear-gradient(to right, orange, red);
+      -webkit-background-clip: text;
+      color: transparent;
+      margin-bottom: 15px;
+      margin-top: .3125rem;
+     
+    }
+  
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+      color: #e66a4e;
+      font-family: "Pacifico", cursive;
+      margin-bottom: 10px;
+    }
+  
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+  
+      button {
+        border: 2px solid #b6b6b6;
+        background: transparent;
+        padding: 8px 15px;
+        border-radius: 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+  
+        &:hover {
+          background: #e6930f;
+          color: white;
+        }
+  
+        &.active {
+          background: rgb(62, 62, 62);
+          color: white;
+        }
+      }
+    }
+  }
+  
