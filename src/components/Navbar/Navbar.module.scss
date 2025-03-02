@@ -1,53 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
 .navbar {
-    background: #fdfaf2;
-    padding: 10px;
-    padding-bottom: 15px;
-    margin-left: 25px;
-    margin-bottom: 5px;
-    border-bottom: 3px solid #4c4c4b2a; 
+  background: #fdfaf2;
+  padding: 0px 17px;
+  padding-bottom: 20px;
+  text-align: center;
+  border-bottom: 3px solid #4c4c4b2a;
 
-
-    .logo {
-      font-size: 36px;
-      font-weight: 700;
+  .logo {
+    font-size: 36px;
+    font-weight: 700;
     font-family: "Pacifico", cursive !important;
-      background: linear-gradient(to right, orange, red);
-      -webkit-background-clip: text;
-      color: transparent;
-      margin-bottom: 15px;
-      margin-top: .3125rem;
-     
-    }
-  
-  
-    .categories {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 10px;
-  
-      button {
-        border: 2px solid #b6b6b6;
-        background: transparent;
-        padding: 8px 15px;
-        border-radius: 20px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        color: #4c4c4c;
-  
-        &:hover {
-          background: #e6930f;
-          color: white;
-        }
-  
-        &.active {
-          background: rgb(62, 62, 62);
-          color: white;
-        }
+    background: linear-gradient(to right, orange, red);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 15px;
+  }
+
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+
+    button {
+      border: 2px solid #b6b6b6;
+      background: transparent;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      color: #4c4c4c;
+
+      &:hover {
+        background: #e6930f;
+        color: white;
+      }
+
+      &.active {
+        background: rgb(62, 62, 62);
+        color: white;
       }
     }
   }
-  
+
+  // ✅ تصميم القائمة المنسدلة (Dropdown)
+  .dropdownWrapper {
+    display: none; // إخفاء القائمة المنسدلة في الوضع العادي
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .dropdown {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #b6b6b6;
+    border-radius: 20px;
+    cursor: pointer;
+    background: white;
+  }
+
+  // ✅ إظهار القائمة المنسدلة فقط في الشاشات الصغيرة
+  @media (max-width: 768px) {
+    .categories {
+      display: none; // إخفاء الأزرار
+    }
+
+    .dropdownWrapper {
+      display: block; // إظهار القائمة المنسدلة
+    }
+  }
+}

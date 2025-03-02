@@ -12,6 +12,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: transform 0.3s ease-in-out;
+  z-index: 9999;
 
   .logo {
     margin-bottom: 1.5rem;
@@ -37,4 +39,33 @@
       background: $hover-color;
     }
   }
+}
+
+.menuBtn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+  font-size: 24px;
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    width: 250px;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .menuBtn {
+    display: block;
+  }
+
+ 
 }
